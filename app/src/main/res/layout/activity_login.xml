@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9D888"
+    android:foregroundTint="#8BC166"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <Button
+        android:id="@+id/log_btn_login"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#48744C"
+        android:text="Log in"
+        android:textColor="#C9FBD8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_check"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Button
+        android:id="@+id/log_btn_registrar"
+        android:layout_width="129dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#7C957E"
+        android:text="Register"
+        android:textColor="#C9FBD9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_btn_login"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <EditText
+        android:id="@+id/log_text_usuario"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="312dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#48744C"
+        android:textColorHint="#48744C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/log_text_contraseña"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#48744C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/log_text_usuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/log_text_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/log_text_usuario"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="349dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073"
+        app:srcCompat="@drawable/logo" />
+
+    <RadioButton
+        android:id="@+id/log_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#48744C"
+        android:text="Remenber me"
+        android:textColor="#48744C"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log_text_contraseña"
+        app:layout_constraintVertical_bias="0.04" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
